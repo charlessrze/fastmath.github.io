@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <link rel="stylesheet" href="/Source/Styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- SQRT -->
+<div class="sqrt block">
+    <div class="block__container">
+        <div class="block__body">
+            <!-- SQRT title -->
+            <div class="block__title"><h1>Квадратный корень</h1></div>
+            <!-- SQRT form -->
+            <form name="sqrt_form" class="sqrt__form block__form">
+                <div class="sqrt__form__left">
+                    <input type="text" name="sqrt_number" class="sqrt__number block__input" placeholder="Введите число"/>
+                    <button name="submit" class="block__button" id="submit" type="submit">Решить</button>
+                </div>
+                <div class="sqrt__form__right">
+                    <p class="block__text-result">Результат: </p>
+                    <span class="block__result" id="sqrt_result">0</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Degree -->
+<div class="degree block">
+    <div class="block__container">
+        <div class="block__body">
+            <!-- Degree title -->
+            <div class="degree__title block__title"><h2>Степень</h2></div>
+            <!-- Degree form -->
+            <form id="degree_form" class="degree__form block__form">
+                <div class="degree__form__left">
+                    <input type="text" id="degree_number" class="degree__number block__input" placeholder="Введите число" >
+                    <input type="text" id="degree_times" class="degree__times block__input" placeholder="Степень" >
+                    <button name="submit" class="block__button" id="submit" type="submit">Решить</button>
+                </div>
+                <div class="sqrt__form__right">
+                    <p class="block__text-result">Результат: </p>
+                    <span class="block__result" id="degree_result">0</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>    
+<!-- Equation -->
+<div class="equation block">
+    <div class="block__container">
+        <div class="block__body">
+            <!-- Equation title -->
+            <div class="equation__title block__title"><h3>Квадратное уравнение</h3></div>
+            <!-- Equation form -->
+            <form id="equation_form" class="equation__form block__form">
+                <div class="equation__adaptive-top">
+                    <input type="text" id="equation_a" class="equation__input block__input" placeholder="a">
+                    <input type="text" id="equation_b" class="equation__input block__input" placeholder="b">
+                    <input type="text" id="equation_c" class="equation__input block__input" placeholder="c">
+                    <button type="submit" class="block__button equation__solve" id="submit equation_solve">Решить</button>
+                    <button type="button" class="block__button check_solve" id="check_solve">Посмотреть решение</button>
+                    <div class="equation__form__full-solve">
+                        <span id="discriminant"></span> <br>
+                        <span id="first-x"></span> <br>
+                        <span id="second-x"></span>
+                    </div>
+                </div>
+                <div class="equation__adaptive-bottom sqrt__form__right">
+                    <p class="block__text-result">Результат: </p>
+                    <span class="block__result" id="equation_result">0</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Percentage -->
+<div class="percentage block">
+    <div class="block__container">
+        <div class="block__body">
+            <!-- Percentage title -->
+            <div class="percentage__title block__title"><h3>Процент от числа</h3></div>
+            <!-- Percentage form -->
+            <form id="percentage_form" class="percentage__form block__form">
+                <div class="percentage__adaptive-top">
+                    <input type="text" id="percentage_number" class="percentage__input block__input" placeholder="Число">            
+                    <input type="text" id="percentage_perc" class="percentage__input block__input" placeholder="Процент">
+                    <button type="submit" class="block__button percentage__solve" id="submit percentage_solve">Решить</button>
+                </div>
+                <div class="percentage__adaptive-bottom">
+                    <span class="block__result" id="percentage_result"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="random block">
+    <div class="block__container">
+        <div class="block__body">
+            <div class="random__title block__title">Рандомное число</div>
+            <form id="random_form" class="random__form block__form">
+                <div class="random__adaptive-top">
+                    <input type="text" id="min_random" class="random__input block__input" placeholder="Минимальное">
+                    <input type="text" id="max_random" class="random__input block__input" placeholder="Максимальное">
+                    <button type="submit" class="random__button block__button" id="submit">Решить</button>
+                </div>
+
+                <div class="random__adaptive-bottom">
+                    <p class="block__text-result">Результат: </p>
+                    <span class="block__result" id="random_result">0</span>
+                </div>
+            </form>        
+        </div>
+    </div>
+</div>
+
+    <script src="./Scripts/sqrt.js"></script>
+    <script src="./Scripts/degree.js"></script>
+    <script src="./Scripts/equation.js"></script>
+    <script src="./Scripts/percentage.js"></script>
+    <script src="./Scripts/random.js"></script>
+</body>
+</html>   

@@ -1,0 +1,11 @@
+.random {
+    margin-bottom: 30px;
+
+    &__adaptive-bottom {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        font-size: 30px;
+    }
+}

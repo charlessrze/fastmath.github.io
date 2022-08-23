@@ -1,0 +1,16 @@
+.percentage {
+    &__input {
+        width: 120px;
+        font-size: 25px;
+    }
+    &__adaptive-bottom {
+       display: flex;
+       align-items: center;
+    }
+    &__form {
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-size: 29px;
+    }
+}

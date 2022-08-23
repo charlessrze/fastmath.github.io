@@ -1,0 +1,83 @@
+.equation {
+    &__input {
+        width: 140px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 25px;
+    }
+
+    &__form {
+        height: 110px;
+        align-items: center;
+
+        &-click {
+            height: 250px;
+        }
+    }
+
+    &__solve {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+.check_solve {
+    width: 250px;
+    font-size: 22px;
+    display: none;
+    margin-bottom: 15px;
+    display: none;
+
+    &-display-on {
+        display: block;
+    }
+}
+
+@media (max-width: 1025px) {
+    .equation__form {
+        height: 170px;
+    }
+}
+
+@media (max-width: 930px) {
+    .equation__form {
+        height: 180px;
+    }
+}
+
+@media (max-width: 669px) {
+    .equation__form {
+        height: 200px;
+    }
+}
+
+@media (max-width: 549px){
+    .equation {
+        &__input {
+            width: 60px;
+        }
+
+        &__form {
+            height: 340px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .equation {
+        &__input {
+            width: 60px;
+        }
+
+        &__title {
+            width: 270px;
+            font-size: 18px;
+        }
+
+        &__form-click {
+            height: 470px;
+        }
+    }
+}
